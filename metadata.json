@@ -1,0 +1,6 @@
+{
+  "name": "Sheets Inventory",
+  "description": "Sistem Portal Kontrol dan Manajemen Inventaris Terintegrasi Google Sheets untuk PT Sastech Abadi Sejahtera.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
