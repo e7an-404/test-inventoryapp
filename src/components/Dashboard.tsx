@@ -336,13 +336,13 @@ export default function Dashboard({
           </div>
           <div>
             <h4 className={`text-xs font-black uppercase tracking-wider ${isDark ? 'text-slate-100' : 'text-slate-800'}`}>Filter Rentang Waktu Global</h4>
-            <p className="text-[10px] text-slate-400 mt-0.5">Saring seluruh metrik audit log riwayat berdasarkan kategori periode terpilih</p>
+            <p className="text-[10px] text-black-400 mt-0.5">Saring seluruh metrik audit log riwayat berdasarkan kategori periode terpilih</p>
           </div>
         </div>
 
         <div className="flex flex-col md:flex-row items-stretch md:items-center gap-4 text-xs">
           <div className="flex flex-wrap items-center gap-3">
-            <span className="text-[10px] font-black uppercase tracking-widest text-slate-400">Periode Audit:</span>
+            <span className="text-[10px] font-black uppercase tracking-widest text-black-400">Periode Audit:</span>
             <div className={`inline-flex rounded-lg border p-1 ${isDark ? 'bg-slate-950 border-slate-800' : 'bg-slate-50 border-slate-200'}`}>
               <button
                 type="button"
@@ -383,7 +383,7 @@ export default function Dashboard({
           {txPeriodFilter === 'daily' && (
             <div className="flex flex-wrap items-center gap-3 animate-fade-in md:pl-2 md:border-l border-slate-700/20">
               <div className="flex items-center gap-1.5">
-                <span className="text-[9px] font-black uppercase text-slate-400">Dari:</span>
+                <span className="text-[9px] font-black uppercase text-black-400">Dari:</span>
                 <input
                   type="date"
                   value={txStartDate}
@@ -395,7 +395,7 @@ export default function Dashboard({
                 />
               </div>
               <div className="flex items-center gap-1.5">
-                <span className="text-[9px] font-black uppercase text-slate-400">Sampai:</span>
+                <span className="text-[9px] font-black uppercase text-black-400">Sampai:</span>
                 <input
                   type="date"
                   value={txEndDate}
@@ -470,12 +470,12 @@ export default function Dashboard({
           isDark ? 'bg-slate-900 border-slate-800' : 'bg-white border-slate-200'
         }`}>
           <div>
-            <p className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-1">Ragam Barang Terdaftar</p>
+            <p className="text-[10px] font-black uppercase tracking-[0.2em] text-black-400 mb-1">Ragam Barang Terdaftar</p>
             <h2 className={`text-3xl sm:text-4xl lg:text-3xl xl:text-4xl font-black tracking-tight ${isDark ? 'text-white' : 'text-slate-900'}`}>
               {totalItems}
             </h2>
           </div>
-          <p className="text-[10px] text-slate-500 font-mono mt-3 w-full truncate">{totalStockCount.toLocaleString('id-ID')} unit teragregasi</p>
+          <p className="text-[10px] text-slate-600 font-mono mt-3 w-full truncate">{totalStockCount.toLocaleString('id-ID')} unit teragregasi</p>
         </div>
 
         {/* Low Stock Alerts */}
@@ -485,12 +485,12 @@ export default function Dashboard({
             : lowStockItems.length > 0 ? 'bg-rose-50/50 border-rose-200' : 'bg-white border-slate-200'
         }`}>
           <div>
-            <p className={`text-[10px] font-black uppercase tracking-[0.2em] mb-1 ${lowStockItems.length > 0 ? 'text-rose-500 font-bold' : 'text-slate-400'}`}>Peringatan Kritis</p>
+            <p className={`text-[10px] font-black uppercase tracking-[0.2em] mb-1 ${lowStockItems.length > 0 ? 'text-rose-500 font-bold' : 'text-black-400'}`}>Peringatan Kritis</p>
             <h2 className={`text-3xl sm:text-4xl lg:text-3xl xl:text-4xl font-black tracking-tight ${lowStockItems.length > 0 ? 'text-rose-500 animate-pulse' : isDark ? 'text-white' : 'text-slate-900'}`}>
               {String(lowStockItems.length).padStart(2, '0')}
             </h2>
           </div>
-          <p className="text-[10px] text-slate-500 font-mono mt-3 w-full truncate">
+          <p className="text-[10px] text-slate-600 font-mono mt-3 w-full truncate">
             {lowStockItems.length > 0 ? 'Butuh restok segera!' : 'Persediaan katalog optimal'}
           </p>
         </div>
@@ -505,7 +505,7 @@ export default function Dashboard({
               {formatRupiah(totalValue)}
             </h2>
           </div>
-          <p className="text-[10px] text-slate-500 font-mono mt-3 w-full truncate">Dihitung dari harga satuan produk</p>
+          <p className="text-[10px] text-slate-600 font-mono mt-3 w-full truncate">Dihitung dari harga satuan produk</p>
         </div>
 
         {/* Activity Feed Counter */}
@@ -513,12 +513,12 @@ export default function Dashboard({
           isDark ? 'bg-slate-900 border-slate-800' : 'bg-white border-slate-200'
         }`}>
           <div>
-            <p className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-1">Total Entri Log Riwayat</p>
+            <p className="text-[10px] font-black uppercase tracking-[0.2em] text-black-400 mb-1">Total Entri Log Riwayat</p>
             <h2 className={`text-3xl sm:text-4xl lg:text-3xl xl:text-4xl font-black tracking-tight ${isDark ? 'text-white' : 'text-slate-900'}`}>
               {filteredTransactions.length}
             </h2>
           </div>
-          <p className="text-[10px] text-slate-500 font-mono mt-3 w-full truncate">Operasi terfilter dalam periode</p>
+          <p className="text-[10px] text-slate-600 font-mono mt-3 w-full truncate">Operasi terfilter dalam periode</p>
         </div>
       </div>
 

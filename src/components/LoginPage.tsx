@@ -68,7 +68,7 @@ export default function LoginPage({ onLogin, theme = 'light', onToggleTheme }: L
         <div className="text-center space-y-2">
           <div className="mx-auto w-14 h-14 bg-indigo-600 flex flex-col items-center justify-center rounded-xl text-white font-black tracking-tighter text-sm shadow-md shadow-indigo-200">
             <span className="text-base leading-none">SAS</span>
-            <span className="text-[7.5px] tracking-widest font-mono text-indigo-200 leading-none mt-1">SEJAHTERA</span>
+            {/*<span className="text-[7.5px] tracking-widest font-mono text-indigo-200 leading-none mt-1">SEJAHTERA</span> */}
           </div>
           <h2 className={`text-xl font-black uppercase tracking-tight font-display ${
             isDark ? 'text-white' : 'text-slate-900'

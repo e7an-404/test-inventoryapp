@@ -108,7 +108,7 @@ export default function SheetsSyncPanel({
   return (
     <div className="space-y-6">
       {/* UPDATE APPS SCRIPT NOTE / NOTICE */}
-      <div className={`p-4 rounded-2xl border flex flex-col md:flex-row items-start md:items-center gap-4 animate-fade-in ${
+      {/*<div className={`p-4 rounded-2xl border flex flex-col md:flex-row items-start md:items-center gap-4 animate-fade-in ${
         isDark 
           ? 'bg-indigo-950/25 border-indigo-900/50 text-indigo-300' 
           : 'bg-indigo-50 border-indigo-100 text-indigo-900'
@@ -124,7 +124,7 @@ export default function SheetsSyncPanel({
             Skrip <b>Apps Script</b> telah kami perbarui untuk mendukung sinkronisasi data <b>Daftarkan Pengguna (User Registry)</b> secara otomatis ke Google Sheets pada tab sheet baru bernama <b>"Users"</b>. Silakan salin isi tab <b>Code.gs</b> di sebelah kanan, lalu terapkan kembali <i>(re-deploy)</i> di penyunting skrip spreadsheet Anda agar pendaftaran petugas operator/admin baru tersimpan aman di cloud.
           </p>
         </div>
-      </div>
+      </div>*/}
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
       

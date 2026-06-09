@@ -529,7 +529,7 @@ export default function TransactionHistory({
           isDark ? 'border-slate-800/60' : 'border-slate-100'
         }`}>
           <div className="flex flex-wrap items-center gap-3">
-            <span className="text-[10px] font-black uppercase tracking-widest text-slate-400">Periode Aliran:</span>
+            <span className="text-[10px] font-black uppercase tracking-widest text-black-400">Periode Aliran:</span>
             <div className={`inline-flex rounded-lg border p-1 ${isDark ? 'bg-slate-950 border-slate-800' : 'bg-slate-50 border-slate-200'}`}>
               <button
                 type="button"
@@ -571,7 +571,7 @@ export default function TransactionHistory({
           {periodFilter === 'daily' && (
             <div className="flex flex-wrap items-center gap-3 animate-fade-in">
               <div className="flex items-center gap-1.5">
-                <span className="text-[10px] font-black uppercase tracking-widest text-slate-400">Dari:</span>
+                <span className="text-[10px] font-black uppercase tracking-widest text-black-400">Dari:</span>
                 <input
                   type="date"
                   value={startDate}
@@ -583,7 +583,7 @@ export default function TransactionHistory({
                 />
               </div>
               <div className="flex items-center gap-1.5">
-                <span className="text-[10px] font-black uppercase tracking-widest text-slate-400">Sampai:</span>
+                <span className="text-[10px] font-black uppercase tracking-widest text-black-400">Sampai:</span>
                 <input
                   type="date"
                   value={endDate}
@@ -599,7 +599,7 @@ export default function TransactionHistory({
 
           {periodFilter === 'monthly' && (
             <div className="flex items-center gap-2 animate-fade-in">
-              <span className="text-[10px] font-black uppercase tracking-widest text-slate-400">Periode:</span>
+              <span className="text-[10px] font-black uppercase tracking-widest text-black-400">Periode:</span>
               <div className="flex items-center gap-2">
                 {/* Month Dropdown */}
                 <select
@@ -648,7 +648,7 @@ export default function TransactionHistory({
             </div>
           )}
 
-          <div className="md:ml-auto text-[9px] font-mono text-slate-400 font-bold uppercase tracking-widest text-right">
+          <div className="md:ml-auto text-[9px] font-mono text-slate-600 font-bold uppercase tracking-widest text-right">
             Menampilkan: <span className="text-indigo-550 font-black text-indigo-500">{filteredTransactions.length}</span> dari <span className="text-slate-500">{transactions.length}</span> aktivitas
           </div>
         </div>
@@ -662,7 +662,7 @@ export default function TransactionHistory({
         <div className="overflow-x-auto">
           <table className="w-full text-left border-collapse">
             <thead>
-              <tr className={`border-b text-slate-400 font-black text-[10px] uppercase tracking-widest [&>th]:cursor-pointer [&>th]:select-none [&>th]:transition hover:[&>th]:text-indigo-550 ${
+              <tr className={`border-b text-slate-600 font-black text-[12px] uppercase tracking-widest [&>th]:cursor-pointer [&>th]:select-none [&>th]:transition hover:[&>th]:text-indigo-550 ${
                 isDark ? 'bg-slate-950/20 border-slate-800 hover:[&>th]:text-indigo-400' : 'bg-slate-50/50 border-slate-100'
               }`}>
                 <th className="py-4 px-5" onClick={() => handleSort('timestamp')}>

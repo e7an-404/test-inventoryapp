@@ -607,13 +607,13 @@ export default function App() {
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-indigo-600 flex flex-col items-center justify-center rounded-lg text-white font-black tracking-tighter select-none shadow-sm">
               <span className="text-xs leading-none">SAS</span>
-              <span className="text-[6px] tracking-widest leading-none mt-0.5">PT</span>
+              {/*<span className="text-[6px] tracking-widest leading-none mt-0.5">PT</span> */}
             </div>
             <div>
               <h1 className={`text-xl font-black tracking-tighter uppercase font-display ${isDark ? 'text-white' : 'text-slate-900'}`}>
                 Sastech Abadi Sejahtera
               </h1>
-              <span className="text-[9px] text-indigo-500 font-mono tracking-widest font-black block mt-0.5 uppercase">Sistem Portal Kontrol Inventaris Gudang</span>
+              <span className="text-[9px] text-indigo-500 font-mono tracking-widest font-black block mt-0.5 uppercase">Sistem Portal Inventaris Gudang</span>
             </div>
           </div>
 
@@ -713,8 +713,8 @@ export default function App() {
             onClick={() => setActiveTab('dashboard')}
             className={`px-5 py-2.5 rounded-lg font-black text-[10px] uppercase tracking-widest flex items-center gap-2 shrink-0 transition-all duration-150 cursor-pointer ${
               activeTab === 'dashboard' 
-                ? 'bg-slate-105 bg-slate-950 border border-slate-800 text-white font-bold' 
-                : 'text-slate-400 hover:bg-slate-850 hover:text-slate-100'
+                ? 'bg-indigo-600 border shadow-md text-white shadow-indigo-150/30' 
+                : 'text-black-400 hover:bg-slate-850 hover:text-indigo-400'
             }`}
           >
             <LayoutDashboard size={13} /> Dasbor Kontrol
@@ -726,8 +726,8 @@ export default function App() {
               onClick={() => setActiveTab('inventory')}
               className={`px-5 py-2.5 rounded-lg font-black text-[10px] uppercase tracking-widest flex items-center gap-2 shrink-0 transition-all duration-150 cursor-pointer ${
                 activeTab === 'inventory' 
-                  ? 'bg-slate-950 border border-slate-800 text-white font-bold' 
-                  : 'text-slate-400 hover:bg-slate-850'
+                  ? 'bg-indigo-600 border shadow-md text-white shadow-indigo-150/30' 
+                  : 'text-black-400 hover:bg-slate-850 hover:text-indigo-400'
               }`}
             >
               <Boxes size={13} /> Katalog Stok
@@ -739,8 +739,8 @@ export default function App() {
             onClick={() => setActiveTab('history')}
             className={`px-5 py-2.5 rounded-lg font-black text-[10px] uppercase tracking-widest flex items-center gap-2 shrink-0 transition-all duration-150 cursor-pointer ${
               activeTab === 'history' 
-                ? 'bg-slate-950 border border-slate-800 text-white font-bold' 
-                : 'text-slate-400 hover:bg-slate-850'
+                  ? 'bg-indigo-600 border shadow-md text-white shadow-indigo-150/30' 
+                  : 'text-black-400 hover:bg-slate-850 hover:text-indigo-400'
             }`}
           >
             <Logs size={13} /> Riwayat Transaksi
@@ -751,8 +751,8 @@ export default function App() {
               onClick={() => setActiveTab('sheets')}
               className={`px-5 py-2.5 rounded-lg font-black text-[10px] uppercase tracking-widest flex items-center gap-2 shrink-0 transition-all duration-150 cursor-pointer ${
                 activeTab === 'sheets' 
-                  ? 'bg-slate-950 border border-slate-800 text-white font-bold' 
-                  : 'text-slate-400 hover:bg-slate-850'
+                  ? 'bg-indigo-600 border shadow-md text-white shadow-indigo-150/30' 
+                  : 'text-black-400 hover:bg-slate-850 hover:text-indigo-400'
               }`}
             >
               <FileSpreadsheet size={13} /> Hubungkan Spreadsheet
@@ -762,10 +762,10 @@ export default function App() {
           {currentUser.role === 'admin' && (
             <button 
               onClick={() => setActiveTab('users')}
-              className={`px-5 py-2.5 rounded-lg font-black text-[10px] uppercase tracking-widest flex items-center gap-2 shrink-0 transition duration-150 cursor-pointer ml-auto ${
+              className={`px-5 py-2.5 rounded-lg font-black text-[10px] uppercase tracking-widest flex items-center gap-2 shrink-0 transition-all duration-150 cursor-pointer ml-auto ${
                 activeTab === 'users' 
                   ? 'bg-indigo-600 text-white shadow-md shadow-indigo-150/30' 
-                  : 'text-slate-400 hover:bg-slate-850 hover:text-indigo-400'
+                  : 'text-black-400 hover:bg-slate-850 hover:text-indigo-400'
               }`}
             >
               <Users size={13} /> Data Pengguna

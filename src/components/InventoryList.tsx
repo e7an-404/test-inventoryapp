@@ -816,7 +816,7 @@ export default function InventoryList({
         <div className="overflow-x-auto">
           <table className="w-full text-left border-collapse">
             <thead>
-              <tr className={`border-b text-slate-400 font-black text-[10px] uppercase tracking-widest [&>th]:cursor-pointer [&>th]:select-none [&>th]:transition hover:[&>th]:text-indigo-500 ${
+              <tr className={`border-b text-slate-600 font-black text-[12px] uppercase tracking-widest [&>th]:cursor-pointer [&>th]:select-none [&>th]:transition hover:[&>th]:text-indigo-500 ${
                 isDark ? 'bg-slate-950/20 border-slate-850 hover:[&>th]:text-indigo-400' : 'bg-slate-50/50 border-slate-100'
               }`}>
                 <th className="py-4 px-5" onClick={() => handleSort('name')}>
